@@ -93,13 +93,13 @@ class Index extends React.Component {
     render() {
         const {collapsed} = this.props;
         const headerTitle = collapsed ? null : <div className='drawer-header-text-container'>
-            <label className='drawer-header-text'>移动端架构师</label>
+            <label className='drawer-header-text'>我的</label>
             <label className='drawer-header-text'>管理后台</label>
         </div>;
         return (
             <Sider trigger={null} collapsed={collapsed} collapsible onCollapse={this.onCollapse}>
                 <div className='drawer-header'>
-                    <img className='drawer-logo' alt="logo" src='https://www.devio.org/img/avatar.png'/>
+                    <img className='drawer-logo' alt="logo" src='https://avatars.githubusercontent.com/u/7081069?v=4'/>
                     {headerTitle}
                 </div>
                 {this.menu()}
